@@ -1,0 +1,6 @@
+urllib.request.urlretrieve("https://raw.githubusercontent.com/e9t/nsmc/master/ratings_train.txt", filename="ratings_train.txt")
+urllib.request.urlretrieve("https://raw.githubusercontent.com/e9t/nsmc/master/ratings_test.txt", filename="ratings_test.txt")
+train_data = pd.read_table('ratings_train.txt')
+test_data = pd.read_table('ratings_test.txt')
+print('훈련용 리뷰 개수 :',len(train_data));
+train_data[:5]
